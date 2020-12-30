@@ -1,0 +1,15 @@
+<Module specificationVersion='2'>
+    <ModulePrefs
+            title="Youtube LiveStream Chat"
+            description="Youtube LiveStream Chat"
+            author="Jancube"
+            thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png"
+            height="800" >
+    </ModulePrefs>
+    <UserPref
+        name="mycolor"
+        display_name="Color"
+        default_value="Red"
+        datatype="string" />
+    <Content type="html" href="https://raw.githubusercontent.com/FranciscoCHT/youtube-chat-jam/master/youtube-chat.html"/>
+</Module>
