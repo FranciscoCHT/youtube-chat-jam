@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   
 </head>
     <body>
-		<iframe width="700" height="400" src="https://www.youtube.com/live_chat?v=5qap5aO4i9A&embed_domain=jam.sapjam.com" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<div id="chat-embed-wrapper"/>
+		<script>  
+			let frame = document.createElement("iframe");  
+			frame.referrerPolicy = "origin";  
+			frame.src = "https://www.youtube.com/live_chat?v=5qap5aO4i9A&embed_domain=" + window.location.hostname;  
+			frame.frameBorder = "0";  
+			frame.id = "chat-embed";  
+			let wrapper = document.getElementById("chat-embed-wrapper");  
+			wrapper.appendChild(frame); 
+		</script>
     </body>
 </html>
