@@ -9,7 +9,9 @@
 			let frame = document.createElement("iframe");  
 			frame.referrerPolicy = "origin";  
 			frame.src = "https://www.youtube.com/live_chat?v=5qap5aO4i9A&embed_domain=" + window.location.hostname;  
-			frame.frameBorder = "0";  
+			frame.frameBorder = "0";
+			frame.width="700";
+			frame.height="400";
 			frame.id = "chat-embed";  
 			let wrapper = document.getElementById("chat-embed-wrapper");  
 			wrapper.appendChild(frame); 
